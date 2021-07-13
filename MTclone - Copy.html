@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/Clone_css.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href ="node_modules/bootstrap-social/bootstrap-social.css">
+    <title>Microsoft Teams Clone</title>
+</head>
+<body class="ab">
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: rgb(219, 219, 219);">HobNob   </a>
+            <a class="navbar-brand" href="#"><img src="./img/Capturemmmm-removebg-preview.png" height="40px" width="40px"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project"><span class="fa fa-list fa-lg"></span> Refrences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills"><span class="fa fa-info fa-lg"></span> Tools</a></li>
+                    <li class="nav-item "><a class="nav-link" href="./contact.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron" >   
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class='col col-sm col-md'>
+                    <div class="media">
+                        <img class="d-flex mr-3 align-self-center"
+                        src="./img/final_logo-removebg-preview.png" style=" border-style: none;" height="30%" width="30%">
+                        <div class="media-body">
+                            <h2 class="mt-0">HobNob</h2>
+                            <h4>MicroSoft Teams Clone</h4>
+                            <p class="d-none d-sm-block" style="font-weight: normal;">Bridge The Gap with Meet And Greet
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3" style="align-self: center;">
+                    <div><button class="btn btn-warning" type="button" 
+                     name="MEET" for="MEET"><a style="text-decoration: none;color: aliceblue;" href="./webrtcchat - Copy/index.html">MEET</a></button></div>
+                </div>
+            </div>
+        </div> 
+    </header>       
+    <footer class="footer_2">
+        <div  class="container">
+           <div class="row justify-content-center">             
+                <div class="col-auto align-self-center">
+                    <p><br>made by love-shraddha</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
+    <!-- <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>  -->
+    <script>
+        $("#carouselButton").click(function(){
+            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                $("#mycarousel").carousel('pause');
+                $("#carouselButton").children("span").removeClass('fa-pause');
+                $("#carouselButton").children("span").addClass('fa-play');
+            }
+            else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                $("#mycarousel").carousel('cycle');
+                $("#carouselButton").children("span").removeClass('fa-play');
+                $("#carouselButton").children("span").addClass('fa-pause');                    
+            }
+        });
+    </script>
+</body>
+
+</html>
